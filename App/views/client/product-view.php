@@ -20,18 +20,18 @@ require_once "./header.php"
 
             <article>
 
-                <h2>Présentation</h2>
-                <div class="container">
-                <img src="../product-1/slide-1-lg.jpg" alt="">
+                <h2 id="present">Présentation</h2>
+                <div>
+                <img src="../../../Public/ressources/images//product-1/slide-1-lg.jpg" alt="">
                 </div>
                 <p>Photos non contractuelles</p>
                 <div class="images">
                     <div>
-                        <img width="60px" padding="0.7rem" src="product-1/slide-1-md.jpg" alt="">
-                        <img width="60px"  padding="0.7rem" src="product-1/slide-2-md.jpg" alt="">
-                        <img width="60px"  padding="0.7rem" src="product-1/slide-3-md.jpg" alt="">
-                        <img width="60px"  padding="0.7rem" src="product-1/slide-4-md.jpg" alt="">
-                        <img width="60px"  padding="0.7rem" src="product-1/slide-5-md.jpg" alt="">
+                        <img width="60px" padding="0.7rem" src="../../../Public/ressources/images/product-1/slide-1-md.jpg" alt="">
+                        <img width="60px"  padding="0.7rem" src="../../../Public/ressources/images/product-1/slide-2-md.jpg" alt="">
+                        <img width="60px"  padding="0.7rem" src="../../../Public/ressources/images/product-1/slide-3-md.jpg" alt="">
+                        <img width="60px"  padding="0.7rem" src="../../../Public/ressources/images/product-1/slide-4-md.jpg" alt="">
+                        <img width="60px"  padding="0.7rem" src="../../../Public/ressources/images/product-1/slide-5-md.jpg" alt="">
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@ require_once "./header.php"
 
             <article>
 
-                <h1>Descriptif</h1>
+                <h2 id="describ">Descriptif</h2>
 
                 <div>
 
@@ -111,7 +111,7 @@ require_once "./header.php"
 
             <article>
 
-                <h1>Caractéristiques techniques</h1>
+                <h2 id="feature">Caractéristiques techniques</h2>
 
                 <div class="div_container_table">
                     <div>

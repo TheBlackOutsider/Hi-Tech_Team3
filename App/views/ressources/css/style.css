@@ -52,6 +52,7 @@
 .container {
     width: 100%;
     max-width: 1140px;
+    margin: 0 auto;
 }
 
 
@@ -388,7 +389,6 @@ header .header_page img {
 
 header .shop_list ul>li {
     margin-bottom: 0.5rem;
-    flex-grow: 0.5;
 }
 
 .shop_list .shop-title:hover,
@@ -446,7 +446,7 @@ header .shop_list .flex_row>li {
 
 
 header .shop_list div.scroll_menu_shop {
-    background-color: var(--clr-menu-background);
+    background-color: var(--clr-gray-element-color);
     width: 100%;
     margin: 0 auto;
     height: 20rem;
@@ -525,10 +525,10 @@ footer {
 
 }
 
-
+/* 
 footer .container {
     background-color: var(--clr-footer-background-color);
-}
+} */
 
 
 .footer_block {
@@ -574,9 +574,6 @@ footer .container {
 
 
 
-* {
-    box-sizing: border-box;
-}
 
 .divImage {
 
@@ -634,7 +631,7 @@ h3 ::after {}
 
 @media screen and (min-width: 480px) {
 
-    table {
+    /* table {
         max-width: 900px;
     }
 
@@ -643,7 +640,7 @@ h3 ::after {}
         border-right: 1px solid #eee;
         padding: 10px;
 
-    }
+    } */
 
     td {
         width: 100%;
@@ -661,13 +658,13 @@ h3 ::after {}
 
 @media screen and (min-width: 960px) {
 
-    body {
+    /* body {
         max-width: 1140px;
-    }
-
-    .div_container {
+    } */
+/* 
+    .container {
         margin: 10px;
-    }
+    } */
 
     /* début partie image "apprécier le design..."*/
 
