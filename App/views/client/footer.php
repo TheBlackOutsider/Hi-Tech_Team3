@@ -93,6 +93,7 @@ require_once "./header.php";
     
 
     <script src="../../views/ressources/js/shop-list-after-click.js"></script>
+    <script src="../../views/ressources/js/mon_compte.js"></script>
 
     <!-- <script src="../../views/ressources/js/click_appear_image.js"></script> -->
 </body>

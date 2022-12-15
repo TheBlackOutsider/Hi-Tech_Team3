@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../ressources/css/style.css">
     <link rel="stylesheet" href="../ressources/css/media.css">
     <link rel="stylesheet" href="../ressources/css/normalize.css">
+    <link rel="stylesheet" href="../ressources/css/mon_compte_style.css">
     <title>Hi-Tech</title>
 </head>
 
@@ -66,18 +67,131 @@
                       </svg>
                 </div>
                 <div class="user_item flex_row_gap">
-                    <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                        </svg>
-                        Mon compte</a>
-                    <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                        </svg>
-                        Mon panier</a>
+                    <div class="user-account-item">
+                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                            </svg>
+                            Mon compte</a>
+                    </div>
+                    <div class="user-cart-item">
+                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+                            Mon panier</a>
+                    </div>
+
+                <div id="openModal" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close" id="close1">X</a>
+                            <h2>Mon compte</h2>
+                            <form action="#">
+                                <fieldset>
+                                    <p>J'ai déja un compte</p>
+                                    <div class="form-connexion-flex">
+                                        <div>
+                                            <label for="">Mon addresse email</label>
+                                        </div>
+                                        <div>
+                                            <input type="text"> <br>
+                                        </div>
+                                                                
+                                    </div>
+                                    <div class="vertical-line"></div>
+                                    <div class="form-connexion-flex">
+                                        <div>
+                                            <label for="">Mon mot de passe</label>
+                                        </div>
+                                        <div>
+                                            <input type="password"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-line"></div>
+
+                                    <div class="form-connexion-flex">
+                                        <a href="">Se connecter</a>
+                                        <a href="">J'ai oublier mon mot de passe</a>
+                                    </div> 
+                                </fieldset>
+
+                                <fieldset>
+                                    <p>Je n'ai pas de compte</p> <br>
+                                    <a href="#">Créer un compte</a>
+                                </fieldset>
+                            </form>
+
+                    </div>
+                </div>
+
+
+                <div id="openModal2" class="modalDialog2">
+                    <div>
+                        <a title="Close" class="close" id="close2">X</a>
+                        <h2>Création de compte</h2>
+                        <form action="#">
+                            <fieldset>
+                                <p>Informations personnelle</p>
+                                <div class="vertical-line"></div>
+                                <div class="form-connexion-flex">
+                                    <div>
+                                        <label for="">Nom</label>
+                                    </div>
+                                    <div>
+                                        <input type="text"> <br>
+                                    </div>
+                
+                                </div>
+                                <div class="form-connexion-flex">
+                                    <div>
+                                        <label for="">Prénom</label>
+                                    </div>
+                                    <div>
+                                        <input type="text"> <br>
+                                    </div>                      
+                                </div>
+                                <div class="form-connexion-flex">
+                                    <div>
+                                        <label for="">Nom d'utilisateur</label>
+                                    </div>
+                                    <div>
+                                        <input type="text"> <br>
+                                    </div>
+                                
+                                </div>
+                                <div class="vertical-line"></div>
+                                <div class="form-connexion-flex">
+                                    <div>
+                                        <label for="">Mot de passe</label>
+                                    </div>
+                                    <div>
+                                        <input type="password"> <br>
+                                    </div>
+                                </div>
+                                <div class="form-connexion-flex">
+                                    <div>
+                                        <label for="">Confirmer mot de passe</label>
+                                    </div>
+                                    <div>
+                                        <input type="password"> <br>
+                                    </div>
+                                </div>
+                                <div class="vertical-line"></div>
+                
+                                <div class="form-connexion-flex">
+                                    <a href="">S'inscrire</a>
+                                    <a href="" id="redirect_connexion">J'ai déja un compte </a>
+                                </div>
+                            
+                            </fieldset>
+                        </form>
+                
+                    </div>
+                </div>
+
+
                 </div>
             </div>
             <nav class="shop_list">
