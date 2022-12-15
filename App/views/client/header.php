@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
-    <title>HiTech</title>
+    <link rel="stylesheet" href="../ressources/css/style.css">
+    <link rel="stylesheet" href="../ressources/css/media.css">
+    <link rel="stylesheet" href="../ressources/css/normalize.css">
+    <title>Hi-Tech</title>
 </head>
 
 <body >
+<script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
     <header>
         <div class="container">
             <div class="accessibilty flex_row_gap">
@@ -33,31 +34,37 @@
                 </span>
             </div>
             <div class="header_page flex_row_gap">
-                <div>
-                    <a href="#"><img src="../../public/ressources/images/logo.svg" alt="Logo Hi-Tech"></a>
-                    <h1 class="reset">HiTech.NET</h1>
-                    <p class="reset">Tout le matériel High-Tech</p>
-                </div>
-                <form action="GET" class="search-bar flex_row">
-                    <input class="reset" type="search" name="search_bar" id="search_bar"
-                    placeholder="Chercher un produit, une marque, une boutique.">
+                <div class="no_user_item flex_row_gap">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        <a href="#"><img src="../../../Public/ressources/images/logo.svg" alt="Logo Hi-Tech"></a>
+                        <h1 class="reset">HiTech.NET</h1>
+                        <p class="reset">Tout le matériel High-Tech</p>
+                    </div>
+                    <form action="GET" class="search-bar flex_row_gap ">
+                        <input class="reset" type="search" name="search_bar" id="search_bar"
+                        placeholder="Chercher un produit, une marque, une boutique.">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                              </svg>
+                          </div>
+                        <select class="reset" name="search_shop_list" id="search_shop_list">
+                            <option value="toutes le boutiques" selected >Toutes le boutiques</option>
+                            <option value="ordinateurs">Ordinateurs</option>
+                            <option value="Périphériques & composants">Périphériques & composants</option>
+                            <option value="Téléphones">Téléphones</option>
+                            <option value="Objects connectés">Objects connectés</option>
+                        </select>
+                        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                           </svg>
-                      </div>
-                    <select class="reset" name="search_shop_list" id="search_shop_list">
-                        <option value="toutes le boutiques" selected >Toutes le boutiques</option>
-                        <option value="ordinateurs">Ordinateurs</option>
-                        <option value="Périphériques & composants">Périphériques & composants</option>
-                        <option value="Téléphones">Téléphones</option>
-                        <option value="Objects connectés">Objects connectés</option>
-                    </select>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        </div>
+                    </form>
+                </div>
+                <div class="search_glass"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                       </svg>
-                      </div>
-                </form>
+                </div>
                 <div class="user_item flex_row_gap">
                     <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -75,12 +82,12 @@
             </div>
             <nav class="shop_list">
                 <ul class="nobullets flex_row_gap ">
-                    <li><span class="shop-title "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <li><span class="shop-title " id="shop_computer" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
                       </svg>
                       Ordinateurs</span>
                         <div class="scroll_menu_shop novisible shop-left">
-                            <ul class="nobullets flex_row">
+                            <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Portables</span>
                                     <ul class="nobullets">
                                         <li><a href="#">PC Portable</a></li>
@@ -111,12 +118,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <li><span class="shop-title" id="shop_comp&feat" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
                       </svg>
                        Périphériques & composants</span>
                         <div class="scroll_menu_shop novisible  shop-right1">
-                            <ul class="nobullets flex_row">
+                            <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Périphériques</span>
                                     <ul class="nobullets">
                                         <li><a href="#">Écran PC</a></li>
@@ -176,12 +183,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <li><span class="shop-title" id="shop_mobiles" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                       </svg>
                       Téléphones</span>
                         <div class="scroll_menu_shop novisible shop-left">
-                            <ul class="nobullets flex_row">
+                            <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Mobile</span>
                                     <ul class="nobullets">
                                         <li><a href="#">Mobile & smartphone</a></li>
@@ -204,11 +211,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <li><span class="shop-title " id="shop_smart-object" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                       </svg> Objets connectés</span>
                         <div class="scroll_menu_shop novisible shop-right2">
-                            <ul class="nobullets flex_row">
+                            <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Maison</span>
                                     <ul class="nobullets">
                                         <li><a href="#">Caméra de surveillance</a></li>
@@ -243,7 +250,5 @@
         </div>
     </header>
 
-    <script src="../Views/css/css_click_shop/shop-list-after-click.js"></script>
-</body>
 
-</html>
+

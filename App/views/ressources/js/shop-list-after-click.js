@@ -19,4 +19,4 @@ function appear_after_click(clickElem, appearElem) {
     });
 }
 appear_after_click(elem_at_click, appearElem)
-console.log("marcos")
+console.log(elem_at_click);
