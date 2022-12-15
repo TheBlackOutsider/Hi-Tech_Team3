@@ -392,7 +392,7 @@ header .shop_list ul>li {
 }
 
 .shop_list .shop-title:hover,
-.shop-title: {
+.shop-title:focus {
     color: var(--clr-links-and-buttons);
     position: relative;
 }
@@ -716,3 +716,6 @@ h3 ::after {}
     }
 
     /************************/
+
+
+}
