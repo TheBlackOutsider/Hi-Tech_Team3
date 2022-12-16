@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../ressources/css/style.css">
     <link rel="stylesheet" href="../ressources/css/media.css">
     <link rel="stylesheet" href="../ressources/css/normalize.css">
-    <link rel="stylesheet" href="../ressources/css/mon_compte_style.css">
+    <!-- <link rel="stylesheet" href="../ressources/css/mon_compte_style.css"> -->
     <title>Hi-Tech</title>
+
 </head>
 
-<body >
-<script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
+<body>
+    <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
     <header>
         <div class="container">
             <div class="accessibilty flex_row_gap">
@@ -42,164 +43,167 @@
                         <p class="reset">Tout le matériel High-Tech</p>
                     </div>
                     <form action="GET" class="search-bar flex_row_gap ">
-                        <input class="reset" type="search" name="search_bar" id="search_bar"
-                        placeholder="Chercher un produit, une marque, une boutique.">
+                        <input class="reset" type="search" name="search_bar" id="search_bar" placeholder="Chercher un produit, une marque, une boutique.">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                              </svg>
-                          </div>
+                            </svg>
+                        </div>
                         <select class="reset" name="search_shop_list" id="search_shop_list">
-                            <option value="toutes le boutiques" selected >Toutes le boutiques</option>
+                            <option value="toutes le boutiques" selected>Toutes le boutiques</option>
                             <option value="ordinateurs">Ordinateurs</option>
                             <option value="Périphériques & composants">Périphériques & composants</option>
                             <option value="Téléphones">Téléphones</option>
                             <option value="Objects connectés">Objects connectés</option>
                         </select>
                         <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                          </svg>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
                         </div>
                     </form>
                 </div>
                 <div class="search_glass"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg>
+                    </svg>
                 </div>
                 <div class="user_item flex_row_gap">
                     <div class="user-account-item">
-                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                            </svg>
-                            Mon compte</a>
+                        <div>
+                            <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                </svg>
+                                Mon compte</a>
+                        </div>
+
+                        <div class="div1">
+                            <div id="openModal" class="modalDialog">
+                                <div class="div1">
+                                    <a title="Close" class="close" id="close1">X</a>
+                                    <h2>Mon compte</h2>
+                                    <form action="#">
+                                        <fieldset>
+                                            <p class="form_redirect">J'ai déja un compte</p>
+                                            <div class="form-connexion-flex">
+                                                <div>
+                                                    <label for="">Mon addresse email</label>
+                                                </div>
+                                                <div>
+                                                    <input type="text"> <br>
+                                                </div>
+
+                                            </div>
+                                            <div class="vertical-line"></div>
+                                            <div class="form-connexion-flex">
+                                                <div>
+                                                    <label for="">Mon mot de passe</label>
+                                                </div>
+                                                <div>
+                                                    <input type="password"> <br>
+                                                </div>
+                                            </div>
+                                            <div class="vertical-line"></div>
+
+                                            <div class="form-connexion-flex">
+                                                <a href="">Se connecter</a>
+                                                <a href="">J'ai oublier mon mot de passe</a>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="form_footer">
+                                            <p>Je n'ai pas de compte</p> <br>
+                                            <a href="#" id="create_account">Créer un compte</a>
+                                        </fieldset>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="div2">
+                                <div id="openModal2" class="modalDialog2">
+                                    <div>
+                                        <a title="Close" class="close" id="close2">X</a>
+                                        <h2>Création de compte</h2>
+                                        <form action="#">
+                                            <fieldset>
+                                                <p>Informations personnelle</p>
+                                                <div class="vertical-line"></div>
+                                                <div class="form-connexion-flex">
+                                                    <div>
+                                                        <label for="">Nom</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text"> <br>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-connexion-flex">
+                                                    <div>
+                                                        <label for="">Prénom</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text"> <br>
+                                                    </div>
+                                                </div>
+                                                <div class="form-connexion-flex">
+                                                    <div>
+                                                        <label for="">Nom d'utilisateur</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text"> <br>
+                                                    </div>
+
+                                                </div>
+                                                <div class="vertical-line"></div>
+                                                <div class="form-connexion-flex">
+                                                    <div>
+                                                        <label for="">Mot de passe</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="password"> <br>
+                                                    </div>
+                                                </div>
+                                                <div class="form-connexion-flex">
+                                                    <div>
+                                                        <label for="">Confirmer mot de passe</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="password"> <br>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-line"></div>
+
+                                                <div class="form-connexion-flex">
+                                                    <a href="">S'inscrire</a>
+                                                    <a href="" id="redirect_connexion">J'ai déja un compte </a>
+                                                </div>
+
+                                            </fieldset>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="user-cart-item">
-                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                             </svg>
                             Mon panier</a>
-                    </div>
-
-                <div id="openModal" class="modalDialog">
-                    <div>
-                        <a href="#close" title="Close" class="close" id="close1">X</a>
-                            <h2>Mon compte</h2>
-                            <form action="#">
-                                <fieldset>
-                                    <p>J'ai déja un compte</p>
-                                    <div class="form-connexion-flex">
-                                        <div>
-                                            <label for="">Mon addresse email</label>
-                                        </div>
-                                        <div>
-                                            <input type="text"> <br>
-                                        </div>
-                                                                
-                                    </div>
-                                    <div class="vertical-line"></div>
-                                    <div class="form-connexion-flex">
-                                        <div>
-                                            <label for="">Mon mot de passe</label>
-                                        </div>
-                                        <div>
-                                            <input type="password"> <br>
-                                        </div>
-                                    </div>
-                                    <div class="vertical-line"></div>
-
-                                    <div class="form-connexion-flex">
-                                        <a href="">Se connecter</a>
-                                        <a href="">J'ai oublier mon mot de passe</a>
-                                    </div> 
-                                </fieldset>
-
-                                <fieldset>
-                                    <p>Je n'ai pas de compte</p> <br>
-                                    <a href="#">Créer un compte</a>
-                                </fieldset>
-                            </form>
 
                     </div>
-                </div>
 
 
-                <div id="openModal2" class="modalDialog2">
-                    <div>
-                        <a title="Close" class="close" id="close2">X</a>
-                        <h2>Création de compte</h2>
-                        <form action="#">
-                            <fieldset>
-                                <p>Informations personnelle</p>
-                                <div class="vertical-line"></div>
-                                <div class="form-connexion-flex">
-                                    <div>
-                                        <label for="">Nom</label>
-                                    </div>
-                                    <div>
-                                        <input type="text"> <br>
-                                    </div>
-                
-                                </div>
-                                <div class="form-connexion-flex">
-                                    <div>
-                                        <label for="">Prénom</label>
-                                    </div>
-                                    <div>
-                                        <input type="text"> <br>
-                                    </div>                      
-                                </div>
-                                <div class="form-connexion-flex">
-                                    <div>
-                                        <label for="">Nom d'utilisateur</label>
-                                    </div>
-                                    <div>
-                                        <input type="text"> <br>
-                                    </div>
-                                
-                                </div>
-                                <div class="vertical-line"></div>
-                                <div class="form-connexion-flex">
-                                    <div>
-                                        <label for="">Mot de passe</label>
-                                    </div>
-                                    <div>
-                                        <input type="password"> <br>
-                                    </div>
-                                </div>
-                                <div class="form-connexion-flex">
-                                    <div>
-                                        <label for="">Confirmer mot de passe</label>
-                                    </div>
-                                    <div>
-                                        <input type="password"> <br>
-                                    </div>
-                                </div>
-                                <div class="vertical-line"></div>
-                
-                                <div class="form-connexion-flex">
-                                    <a href="">S'inscrire</a>
-                                    <a href="" id="redirect_connexion">J'ai déja un compte </a>
-                                </div>
-                            
-                            </fieldset>
-                        </form>
-                
-                    </div>
-                </div>
 
 
                 </div>
             </div>
             <nav class="shop_list">
                 <ul class="nobullets flex_row_gap ">
-                    <li><span class="shop-title " id="shop_computer" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-                      </svg>
-                      Ordinateurs</span>
+                    <li><span class="shop-title " id="shop_computer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                            </svg>
+                            Ordinateurs</span>
                         <div class="scroll_menu_shop novisible shop-left">
                             <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Portables</span>
@@ -232,10 +236,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title" id="shop_comp&feat" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
-                      </svg>
-                       Périphériques & composants</span>
+                    <li><span class="shop-title" id="shop_comp&feat"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            </svg>
+                            Périphériques & composants</span>
                         <div class="scroll_menu_shop novisible  shop-right1">
                             <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Périphériques</span>
@@ -297,10 +301,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title" id="shop_mobiles" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                      </svg>
-                      Téléphones</span>
+                    <li><span class="shop-title" id="shop_mobiles"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            Téléphones</span>
                         <div class="scroll_menu_shop novisible shop-left">
                             <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Mobile</span>
@@ -325,9 +329,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li><span class="shop-title " id="shop_smart-object" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                      </svg> Objets connectés</span>
+                    <li><span class="shop-title " id="shop_smart-object"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg> Objets connectés</span>
                         <div class="scroll_menu_shop novisible shop-right2">
                             <ul class="nobullets flex_column">
                                 <li><span class="shop_shelf title_little">Maison</span>
@@ -363,6 +367,3 @@
             </nav>
         </div>
     </header>
-
-
-
