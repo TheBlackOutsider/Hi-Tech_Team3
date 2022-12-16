@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +13,7 @@
     <link rel="stylesheet" href="../ressources/css/style.css">
     <link rel="stylesheet" href="../ressources/css/media.css">
     <link rel="stylesheet" href="../ressources/css/normalize.css">
-    <!-- <link rel="stylesheet" href="../ressources/css/mon_compte_style.css"> -->
     <title>Hi-Tech</title>
-
 </head>
 
 <body>
@@ -72,7 +73,10 @@
                             <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                                 </svg>
-                                Mon compte</a>
+
+                                 Mon compte
+                                
+                               </a>
                         </div>
 
                         <div class="div1">
@@ -111,7 +115,7 @@
 
                                         <fieldset class="form_footer">
                                             <p>Je n'ai pas de compte</p> <br>
-                                            <a href="#" id="create_account">Créer un compte</a>
+                                            <button type="submit" id="create_account" name="register" >S'inscrire</button>
                                         </fieldset>
                                     </form>
 
@@ -123,7 +127,7 @@
                                     <div>
                                         <a title="Close" class="close" id="close2">X</a>
                                         <h2>Création de compte</h2>
-                                        <form action="#">
+                                        <form action="../../controllers/registercontroller.inc.php" method="post">
                                             <fieldset>
                                                 <p>Informations personnelle</p>
                                                 <div class="vertical-line"></div>
@@ -132,7 +136,7 @@
                                                         <label for="">Nom</label>
                                                     </div>
                                                     <div>
-                                                        <input type="text"> <br>
+                                                        <input type="text" name="lname"> <br>
                                                     </div>
 
                                                 </div>
@@ -141,15 +145,15 @@
                                                         <label for="">Prénom</label>
                                                     </div>
                                                     <div>
-                                                        <input type="text"> <br>
+                                                        <input type="text" name="fname"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Nom d'utilisateur</label>
+                                                        <label for="">Email</label>
                                                     </div>
                                                     <div>
-                                                        <input type="text"> <br>
+                                                        <input type="email" name=email> <br>
                                                     </div>
 
                                                 </div>
@@ -159,7 +163,7 @@
                                                         <label for="">Mot de passe</label>
                                                     </div>
                                                     <div>
-                                                        <input type="password"> <br>
+                                                        <input type="password" name="pwd"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="form-connexion-flex">
@@ -167,13 +171,13 @@
                                                         <label for="">Confirmer mot de passe</label>
                                                     </div>
                                                     <div>
-                                                        <input type="password"> <br>
+                                                        <input type="password" name="confirm_pwd"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="vertical-line"></div>
 
                                                 <div class="form-connexion-flex">
-                                                    <a href="">S'inscrire</a>
+                                                    <button type="submit" name="register">S'inscrire</button>
                                                     <a href="" id="redirect_connexion">J'ai déja un compte </a>
                                                 </div>
 

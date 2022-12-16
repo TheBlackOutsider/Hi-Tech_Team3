@@ -1,8 +1,7 @@
 <?php
-require_once "./header.php"
+require_once "./header.php";
+
 ?>
-
-
     <main class="container">
 
         <div class="div_container">

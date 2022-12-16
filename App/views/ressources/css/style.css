@@ -739,6 +739,7 @@ h3 ::after {}
 .form_footer{
     text-align: left;
     padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 .modalDialog {
     position: fixed;
@@ -756,13 +757,14 @@ h3 ::after {}
 }
 
 .modalDialog>div {
-    width: 45rem;
+    width: 50rem;
     height: auto;
     position: relative;
     margin: 6% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background-color: rgb(212, 206, 206, 1);
+    background-color: rgb(250, 245, 245);
+    padding-bottom: 1rem;
 }
 
 .close {
@@ -819,7 +821,9 @@ a[href="#openModal2"] {
     padding-bottom: 1rem;
     background-color: rgb(237, 232, 232);
 }
+.form-connexion-flex{
 
+}
 #openModal form {
     display: flex;
     flex-direction: column;
@@ -892,15 +896,19 @@ a[href="#openModal2"] {
     transition: opacity 400ms ease-in;
     /* pointer-events: none; */
 }
+.form-connexion-flex input{
+    height: 3rem;
+}
 
 .modalDialog2>div {
-    width: 45rem;
+    width: 50rem;
     height: auto;
     position: relative;
     margin: 5% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background-color: rgb(212, 206, 206, 1);
+    background-color: rgb(250, 245, 245);
+    padding-bottom: 1rem;
 }
 
 
