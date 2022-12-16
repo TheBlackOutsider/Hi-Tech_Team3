@@ -748,7 +748,7 @@ h3 ::after {}
     bottom: 0;
     left: 0;
     /* opacity: 1; */
-    background: rgba(159, 36, 36, 0.1);
+    background: rgba(35, 34, 34, 0.5);
     z-index: 99999999;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
@@ -762,7 +762,7 @@ h3 ::after {}
     margin: 6% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(212, 206, 206, 1);
 }
 
 .close {
@@ -885,7 +885,7 @@ a[href="#openModal2"] {
     bottom: 0;
     left: 0;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(35, 34, 34, 0.5);
     z-index: 99;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
@@ -900,7 +900,7 @@ a[href="#openModal2"] {
     margin: 5% auto;
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(212, 206, 206, 1);
 }
 
 
