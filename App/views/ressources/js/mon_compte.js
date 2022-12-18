@@ -1,7 +1,5 @@
 
 
-//Une fonction qui permet de cacher un modal au click sur un element
-
 let click_account = document.querySelector(".user-account-item>div>a")
 let div1 = document.getElementById("openModal")
 let div2=document.getElementById("openModal2")

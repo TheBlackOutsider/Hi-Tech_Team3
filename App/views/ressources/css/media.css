@@ -110,6 +110,39 @@
         flex-basis: 75%;
     }
 
+    /*Ajouter par marcos*/
+
+        
+         div.divImage {
+             width: 50%;
+         }
+    
+         div.divImage img {
+             width: 100%;
+             height: auto;
+         }
+
+         /* .product-picture{
+            width: 45%;
+
+         }
+
+         .product-picture img{
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+         } */
+
+                  .details_product_add_to_paner {
+                      
+                      flex-direction: row;
+                    
+                  }
+
+         
+    /**/
+
+
     /************************/
 
 
