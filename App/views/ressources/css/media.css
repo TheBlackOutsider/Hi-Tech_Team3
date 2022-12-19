@@ -1,4 +1,9 @@
 @media only screen and (min-width: 480px) {
+
+    main {
+        padding: 0.5rem;
+    }
+
     div.header_page {
         flex-direction: row;
     }
@@ -35,6 +40,11 @@
 }
 
 @media only screen and (min-width: 960px) {
+
+    main {
+        padding: 0.5rem;
+    }
+
     div.header_page {
         flex-direction: row;
     }
@@ -54,7 +64,7 @@
     form.search-bar div {
         display: inline;
     }
-    
+
     .shop_list>ul>li {
         min-width: 22%;
 
@@ -98,7 +108,7 @@
         display: flex;
         align-items: center;
         gap: 5rem;
-        
+
         margin-block-end: 55px;
     }
 
@@ -112,17 +122,17 @@
 
     /*Ajouter par marcos*/
 
-        
-         div.divImage {
-             width: 50%;
-         }
-    
-         div.divImage img {
-             width: 100%;
-             height: auto;
-         }
 
-         /* .product-picture{
+    div.divImage {
+        width: 50%;
+    }
+
+    div.divImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* .product-picture{
             width: 45%;
 
          }
@@ -133,13 +143,13 @@
             height: auto;
          } */
 
-                  .details_product_add_to_paner {
-                      
-                      flex-direction: row;
-                    
-                  }
+    .details_product_add_to_paner {
 
-         
+        flex-direction: row;
+
+    }
+
+
     /**/
 
 
