@@ -2,19 +2,18 @@
 require_once "./header.php";
 
 ?>
-<script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
     <footer>
         <div class="container">
             <nav class="shop_list">
                     <ul class="nobullets flex_row_gap ">
                         <li><a href="#shop_computer" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-                          </svg>
-                          Ordinateurs</a>
+                        </svg>
+                        Ordinateurs</a>
                         </li>
                         <li><a href="#shop_comp&feat"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
-                          </svg>
+                        </svg>
                            Périphériques & composants</a>
                         </li>
                         <li><a href="#shop_mobiles"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -29,7 +28,7 @@ require_once "./header.php";
                                         </ul>
                                     </li>
                                     <li><span class="shop_shelf title_little">Accessoires</span>
-                                        <ul class="nobullets">
+                                    <ul class="nobullets">
                                             <li><a href="#">Carte mémoire</a></li>
                                             <li><a href="#">Étuis</a></li>
                                             <li><a href="#">Kit piéton/casque</a></li>
@@ -86,16 +85,18 @@ require_once "./header.php";
             <div class="author_copyright">
                 <img src="" alt="">
                 <p>
-                </p>
+                    </p>
             </div>
         </div>
     </footer>
     
 
+    <script src="https://kit.fontawesome.com/b48549a02e.js" crossorigin="anonymous"></script>
     <script src="../../views/ressources/js/shop-list-after-click.js"></script>
     <script src="../../views/ressources/js/mon_compte.js"></script>
     <script src="../../views/ressources/js/click_image.js"></script>
-
+    <script src="../../views/ressources/js/user_location.js"></script>
+    
     <!-- <script src="../../views/ressources/js/click_appear_image.js"></script> -->
 </body>
 

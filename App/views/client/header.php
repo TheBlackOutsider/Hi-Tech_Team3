@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,6 +78,7 @@
                             </a>
                         </div>
 
+
                         <div class="div1">
                             <div id="openModal" class="modalDialog">
                                 <div class="div1">
@@ -91,27 +89,27 @@
                                             <p class="form_redirect">J'ai déja un compte</p>
                                             <div class="form-connexion-flex">
                                                 <div>
-                                                    <label for="">Mon addresse email</label>
+                                                    <label for="email_connect">Mon addresse email</label>
                                                 </div>
                                                 <div>
-                                                    <input type="text"> <br>
+                                                    <input type="text" id="email_connect"> <br>
                                                 </div>
 
                                             </div>
                                             <div class="vertical-line"></div>
                                             <div class="form-connexion-flex">
                                                 <div>
-                                                    <label for="">Mon mot de passe</label>
+                                                    <label for="pwd_connect">Mon mot de passe</label>
                                                 </div>
                                                 <div>
-                                                    <input type="password"> <br>
+                                                    <input type="password" id="pwd_connect"> <br>
                                                 </div>
                                             </div>
                                             <div class="vertical-line"></div>
 
                                             <div class="form-connexion-flex">
-                                                <a href="">Se connecter</a>
-                                                <a href="">J'ai oublier mon mot de passe</a>
+                                                <a href="home.html">Se connecter</a>
+                                                <a href="#">J'ai oublier mon mot de passe</a>
                                             </div>
                                         </fieldset>
 
@@ -135,52 +133,52 @@
                                                 <div class="vertical-line"></div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Nom</label>
+                                                        <label for="lname">Nom</label>
                                                     </div>
                                                     <div>
-                                                        <input type="text" name="lname"> <br>
+                                                        <input type="text" name="lname" id="lname"> <br>
                                                     </div>
 
                                                 </div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Prénom</label>
+                                                        <label for="fname">Prénom</label>
                                                     </div>
                                                     <div>
-                                                        <input type="text" name="fname"> <br>
+                                                        <input type="text" name="fname" id="fname"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Email</label>
+                                                        <label for="email">Email</label>
                                                     </div>
                                                     <div>
-                                                        <input type="email" name=email> <br>
+                                                        <input type="email" name="email" id="email"> <br>
                                                     </div>
 
                                                 </div>
                                                 <div class="vertical-line"></div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Mot de passe</label>
+                                                        <label for="pwd">Mot de passe</label>
                                                     </div>
                                                     <div>
-                                                        <input type="password" name="pwd"> <br>
+                                                        <input type="password" name="pwd" id="pwd"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="form-connexion-flex">
                                                     <div>
-                                                        <label for="">Confirmer mot de passe</label>
+                                                        <label for="confirm_pwd">Confirmer mot de passe</label>
                                                     </div>
                                                     <div>
-                                                        <input type="password" name="confirm_pwd"> <br>
+                                                        <input type="password" name="confirm_pwd" id="confirm_pwd"> <br>
                                                     </div>
                                                 </div>
                                                 <div class="vertical-line"></div>
 
                                                 <div class="form-connexion-flex">
                                                     <button type="submit" name="register">S'inscrire</button>
-                                                    <a href="" id="redirect_connexion">J'ai déja un compte </a>
+                                                    <a href="#" id="redirect_connexion">J'ai déja un compte </a>
                                                 </div>
 
                                             </fieldset>
@@ -202,7 +200,7 @@
                         </div>
                     </div>
 
-
+ 
 
 
 
