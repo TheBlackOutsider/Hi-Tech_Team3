@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="user-cart-item">
-                        <a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <a class="pannerPrint"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                             </svg>
                             Mon panier</a>
@@ -198,6 +198,51 @@
                         <div class="container_total_shop">
                             <span class="total_shop">0</span><span>€</span>
                         </div>
+
+                        <div id="openModal4" class="modalDialog4">
+                            <div>
+                                <a title="Close4" class="close4" id="close4">X</a>
+                                <div class="modal_zero_products">
+                                    <span class="modal_panner_title">Mon panier</span>
+                                    <p class="nothing_paner">Aucun article </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="openModal5" class="modalDialog5">
+                            <div>
+                                <a title="Close" class="close5" id="close5">X</a>
+                                <div class="modal_zero_products">
+                                    <span>Mon panier</span>
+                                    <table id="table1" class="table1">
+
+                                        <tr class="tr2">
+                                            <td class="td_tot name"></td>
+                                            <td class="td_2 click" id="total_add_click"></td>
+                                            <td id="total_command" class="prix"></td>
+                                            <td><button class="btn-delete">X</button></td>
+                                        </tr>
+                                        <tr class="tr1">
+                                            <td class="td_tot">TOTAL</td>
+                                            <td class="td_2 td_3" id="total_add_click"></td>
+                                            <td id="total_command" class="total_command"></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="table2">
+                                        <tr class="tr2">
+                                            <td class="td2">
+                                                <a id="link_validate_command" href="#">Valider la commande</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
  

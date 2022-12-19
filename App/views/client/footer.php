@@ -96,7 +96,8 @@ require_once "./header.php";
     <script src="../../views/ressources/js/mon_compte.js"></script>
     <script src="../../views/ressources/js/click_image.js"></script>
     <script src="../../views/ressources/js/user_location.js"></script>
-    
+    <script src="../../views/ressources/js/ajoutauPAnier.js"></script>
+
     <!-- <script src="../../views/ressources/js/click_appear_image.js"></script> -->
 </body>
 
