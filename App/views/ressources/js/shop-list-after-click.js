@@ -19,4 +19,3 @@ function appear_after_click(clickElem, appearElem) {
     });
 }
 appear_after_click(elem_at_click, appearElem)
-console.log(elem_at_click);

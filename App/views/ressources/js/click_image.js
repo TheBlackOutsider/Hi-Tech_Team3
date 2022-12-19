@@ -29,9 +29,7 @@ let images_zone = document.querySelectorAll(".images_zone img");
 images_zone.forEach(function (element, index) {
     element.addEventListener("click", function (e) {
         e.preventDefault();
-        console.log("click");
         let srcSource = element.getAttribute("src")
-        console.log(srcSource);
         modal_image.setAttribute("src", srcSource);
     })
 });
