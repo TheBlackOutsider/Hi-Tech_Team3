@@ -74,7 +74,7 @@ require_once "./header.php";
                     <p><a href="#"></a>Nos services</p>
                     <p><a href="#"></a>Contactez-nous</p>
                 </div>
-                <div class="footer_item novisible">
+                <div class="footer_item">
                     <h2>Informations</h2>
                     <p><a href="#"></a>Plan du site</p>
                     <p><a href="#"></a>Foire Aux Questions</p>
